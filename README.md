@@ -11,3 +11,5 @@ The idea behind GANs is that two networks, a generator  𝐺, and a discriminato
 The following diagram shows the general idea:
 
 ![image](https://user-images.githubusercontent.com/28582065/90556171-bbc8d080-e198-11ea-88ba-9beb3ef8cef6.png)
+
+This way we will be end-up with a Generator capable of generate new training data from scratch.
