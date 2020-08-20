@@ -5,7 +5,7 @@ Created on Tue Aug 18 20:45:02 2020
 @author: HTRUJILLO
 """
 
-import torch
+
 import torch.nn as nn
 import torch.nn.functional as F
 
@@ -25,7 +25,7 @@ class Discriminator(nn.Module):
         
     def forward(self, x):
         
-        x = torch.flatten(x)
+        x = x.view(-1, 28*28)
         
         x = F.leaky_relu(self.fc1(x), 0.2)
         x = self.dropout(x)
